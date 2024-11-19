@@ -1,0 +1,22 @@
+/* 
+
+  Sintaxis
+
+  La sintaxis se usa para definir que se aplican a los elementos de una página web.
+
+  Consta de 3 comonentes principales
+
+    selector{
+    
+      propiedad: valor; // ; de después de cada valor.
+      propiedad: valor // ; se puede omitir en la últmia propiedad.
+
+    }
+
+*/
+
+h1{
+  color:orange;
+  font: 120px;
+  font-family: sans-serif;
+}
