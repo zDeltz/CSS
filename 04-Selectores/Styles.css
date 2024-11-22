@@ -13,11 +13,35 @@
 
   2. Selectores de Clase
 
+    Seleccionan los elementos que tiene una clase específica.
+
+    Se usa la 'notación' de punto (.) antes del nombre de la clase.
+
+    .nombreClase{
+      propiedad: valor;
+    }
+
   3. Selectores de ID
+
+    Seleccionan un elemento único con un identificador específico.
+
+    Se usa la 'notación' de numeral (#)
+   antes del nombre del ID
+
+     nombreID{
+      propiedad: valor;
+    }
 
   4. Selectores Combinados
 
     - Descendientes
+
+      Seleccionan elementos dentro de otro elementos.
+
+      elemnto elementoInterno{
+        propiedad: valor;
+      }
+
     - Hijo directo
     - Elemento Adjacente
     - Hermano General
@@ -40,10 +64,10 @@ Selectores Básicos
 
 */
 
-/* Universa -> seleccionar todos los elementos de un documento */
+/* Universal -> seleccionar todos los elementos de un documento */
 
 * {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 
   /* Resset básico */
 
@@ -53,7 +77,7 @@ Selectores Básicos
 
 }
 
-/* Selectores de Tipo -> Sellecionan un tipo de elemento htmil */
+/* Selectores de Tipo -> Selecionan un tipo de elemento htmil */
 
 body {
   background-color: cornflowerblue;
@@ -68,5 +92,48 @@ p {
 }
 
 header {
-  background-color: darkviolet;
+  background-color: rgb(127, 29, 169);
+}
+
+/* 22/11/2024 */
+
+/* Selectores de Clase */
+
+.content{
+  background-color: rgb(16, 108, 108);
+  padding: 48px;
+}
+
+.hero{
+  background-color: lightcoral;
+  padding: 24px;
+}
+
+.hero-title{
+  background-color: rgb(207, 78, 158);
+  color:rgb(57, 0, 97);
+  padding: 16px;
+  text-align: center;
+}
+
+/* Selector de ID */
+
+#about-title{
+  color: honeydew;
+  font-size: 72px;
+  font-family: sans-serif;
+}
+
+/* Combinado - Elementos Descendientes */
+
+aside section{
+  background-color: crimson;
+  padding: 48px;
+}
+
+.asside-section h3{
+  color: blanchedalmond;
+  text-align: right;
+  padding: 24px;
+  background-color: lightcoral;
 }
