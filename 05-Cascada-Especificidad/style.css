@@ -1,0 +1,70 @@
+/* 
+
+  Cascada y Especificidad
+
+  Se refiere a como el navegador decide aplicar los estilos.
+
+  Cascada -> Orden de las deglas de CSS
+  Especificidad -> Valor de las reglas de CSS
+
+  ¿Qué es una regla de CSS?
+
+  La combinación de un selector y sus propiedades y valores.
+
+    sector {
+      propiedad: valor;
+    }
+
+
+  * Cascada
+
+  Si un selector se repite a lo largo del código, aplicará la última regla escrita.
+
+
+  * Especificidad
+
+  El orden de importancia de los selectores. Del menos importante al más importante:
+
+  5. Selector de elemento   ->   1
+  4. Selector de clase      ->   10
+  3. Selector de ID         ->   100
+  2. Estilos de línea       ->   1000
+  1. !important             ->   Vale todo!
+
+  Si las reglas tienen la misma especificidad, se aplica la última que aparece en el documento.
+
+
+*/
+
+
+#title {
+  color:darkblue;
+}
+
+
+/* Cascada */
+
+h1 {
+  color:red;
+}
+
+h1 {
+  color:blue;
+}
+
+
+/* Especificidad */
+
+
+.title {
+  color:orangered;
+}
+
+h1 {
+  color:green;
+}
+
+
+h1 {
+  color:crimson !important;
+}
