@@ -1,0 +1,131 @@
+/* 
+
+  Fuentes Personalizadas
+
+  - Fuentes Externas
+
+    Llamamos de ervidores remotos.
+
+  Google Fonts
+
+    Es un servicio o catálogo de fuentes que podemos usar de manera gratuita en internet.
+
+    - Optimiziadas para digital
+    - Gratuitas de uso comercial
+    - Curadas y de alta calidad
+    - Código de vinculación para web
+
+    https://fonts.google.com/
+
+    1. Seleccionar la fuente y traer el código de incrustración (Embed Code) al HTML, lo pegamos entre las etiquetas <head>
+
+    2. Definimos las reglas CSS para los elmentos a los que se las queremos aplicar. Usamos las propiedades de font-family, font-weight, font-style. Para las tipografías estáticas.
+
+
+
+  - Fuentes Internas
+
+    Llamamos desde nuestro propio servidor o carpeta de recursos.
+
+    1. Debemos tener los archivos en una carpeta específica.
+    2. Formatos cómunes son .ttf .otf .wotf .wotf2 etc...
+    3. Declaramos en CSS @font-face
+
+    @font-face{
+      font-family: nombreFuente; // Dos palaras entre " "
+      scr: url(ubicación), format(formato) // Ubicación y formato entre " "
+    }
+
+    4. Creamos la regla CSS
+
+    selector {
+      font-family: nombreFuente, respaldo;
+    }
+
+
+*/
+
+body{
+  background-color: khaki;
+}
+
+/* Tipografías estáticas */
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Elige el grsor o peso de la tipografía */
+  font-style: normal; /* Elige si es italica o cursiva */
+}
+
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* Tipografías variables */
+
+/* .title{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 610;
+  font-style: italic;
+  transition: font-weight 1s ease;
+}
+
+.title:hover {
+  font-weight: 410;
+  transition: font-weight 1s ease;
+
+.text{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 410;
+  font-style: normal;
+} */
+
+/* 
+
+  Elegir dos fuentes distintas en Google Fonts.
+  Una para el título
+  Una para el párrafo
+  Crea la regla CSS para cada elemento con un selector ID.
+
+  Nota: Comentar los códigos de incrustración anteriores.
+
+*/
+
+#title{
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 560;
+  font-style: italic;
+}
+
+#text{
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 420;
+  font-style: normal;
+}
+
+
+
+/* Fuentes Internas */
+
+@font-face {
+  font-family: "Mufist";
+  src: url("./Fonts/Mufist-Variable.otf"), format("otf");
+}
+
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("./Fonts/LEMONMILK-Regular.otf"), format("otf");
+}
+
+#text {
+  font-family: "Lemon Milk", sans-serif;
+}
+
+#title{
+  font-family: "Mufist",sans-serif;
+}
