@@ -1,0 +1,73 @@
+body{
+
+  font-family: "Poppins", sans-serif; /* Si se hereda */
+  color: rgb(255, 105, 113); /* Si se hereda */
+  background-color: rgb(28, 26, 26); /* El fondo no se hereda */
+
+  height: 1000px; /* Absoluta */
+  height: 100%; /* Relativa */
+  height: 100vh; /* Total de la altura de la ventana */
+
+}
+
+
+/* 
+
+  Bloque y Linea
+
+  - Los elementos de bloque miden todo el ancho disponible de su contenedor
+
+  - Los elementos de bloque miden el alto de todo su contenido.
+
+  - Los elementos de linea miden el ancho del contenido.
+
+  - Los elementos de linea miden el alto de su contenido, considerando su espacio entre líneas.
+
+
+  width (ancho) y height (altura)
+
+  Se utiliza para establecer las dimensiones de un elemento en una página web.
+
+  Estas propiedades permite definir el tamaño de los elementos, como cajas, imágenes o contenedores de manera específica.
+
+  * width establece el ancho de un elemento y podemos especificar su dimensión horizontal con unidades como px, %, em y rem...
+
+  height establece la altura de un elemento y podemos especificar su dimensión vertical con unidades como px, %, em, rem y auto.
+
+  *   Si no se especifica la altura a un elemento de bloque, el elemento ajustarà su altura al contenido.
+
+  *   Si usamos valores con unidades absolutas, limitamos la adaptabilidad de los elementos. Es recomendable usar unidades relativas como % o vw (viewport width) / vh (viweport height)
+
+  Para los elementos de linea el with y el height no funcionan. Por default se ajustarán a su contenido.
+
+  Si queremos que un elemento de línea responda a un ancho y un alto explícito, necesitamos cabmiar su comportamiento de visualización a través de la propiedad display.
+
+  Para esto la propiedad de display puede recibir los valores de inline-block o block
+
+*/
+
+
+.bloque {
+  background-color: indigo;
+
+  width: 100px; /* Absoluta */
+  width: 50%; /* Relativa */
+  width: auto; /* Predeterminada */
+
+  height: 100px;  /* Absoluta */
+  height: auto; /* Default */
+  height: 50%; /* Relativa */
+
+
+}
+
+.linea {
+  background-color: midnightblue;
+
+  display: block; /* Cambia su visualización */
+
+  display: inline-block;
+
+  width: 100px;
+  height: 100px;
+}
