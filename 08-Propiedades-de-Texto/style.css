@@ -17,6 +17,18 @@
 
   text=decoration -> Añade una línea transversal al texto, Recibe los valores: none, underline, overline, line-through
 
+  text-transform -> Controla la capitalización del texto,recibe los valores: uppercase, lowercase y capitalize.
+
+  line-height -> Espacio entre las líneas de texto. Recibe valores en px, %, em y rem, en un valor sin unidad será relativo al tamaño de la fuente.
+
+  letter-spacing -> Es el espacio entre letras, recibe valores en px, em y rem.
+
+  word-spacing ->
+
+  text-shadow -> Sombra del texto. Recibe los valores en el siguiente orden: offset-x offset-y y blur color
+
+    10px  10px  10px red   ->  Derecha y abajo
+    -10px  -10px  10px red   -> Izquierda y arriba
 
 */
 
@@ -31,6 +43,15 @@ h1 {
   font-style: oblique;
   text-align: center;
   text-decoration: underline;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  letter-spacing: 1em;
+  word-spacing: 30 px;
+  letter-spacing: 1rem;
+
+  text-shadow: 6px 6px 10px wheat;
 }
 
 p {
@@ -41,6 +62,14 @@ p {
   font-style: normal;
   text-align: left;
   text-decoration: line-through;
+  text-transform: uppercase;
+  text-transform: lowercase;
+
+  line-height: 24px;
+  line-height: 200%;
+  line-height: 4;
+  line-height: 1rem;
+  line-height: 1em;
 }
 
 .important {
@@ -49,6 +78,7 @@ p {
 
 a {
   color: lightcoral;
+  font-family: sans-serif;
   font-size: xx-large;
   text-decoration: none;
 }
