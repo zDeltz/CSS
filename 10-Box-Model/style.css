@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(254, 244, 231);
+  background-color: rgb(74, 59, 85);
+}
+
+/* 
+
+  Box Model
+
+  Es un concepto fundamental que decribe comolos elementos de una página web se organizan y calculan su tamaño.
+
+  1. Contenido (content)
+
+  Es el área donde se encuentra el texto, las imágenes y otro elemento hijo. El tamaño de esta área se define con las propiedades width y height.
+
+
+  2. Relleno (padding)
+
+  Es el espacio entre el contenido y el borde de la caja. Ayuda a crear un espacio interno alrededor del contenido.
+
+  La propiedad de padding es un "shorthand" que controla los cuatro lados posibles de la caja.
+
+    padding: top right bottom left;
+    padding: top left/right buttom;
+    padding: top/bottom right/left;
+    padding: t/r/b/l;
+
+    padding-top: valor;
+    padding-right: valor;
+    padding-bottom: valor;
+    padding-left: valor;
+
+
+  3. Borde (border)
+
+  Es el borde que rodea el content y al padding, podemos personalizar su grosor, estilo y color. También es una propiedad "shorthand".
+
+    border: ancho estilo color;
+
+    border-width: valor;
+    border-style: valor;
+    border-color: valor;
+
+    border-top-width: valor;
+    border-right-width: valor;
+    border-bottom-width: valor;
+    border-left-width: valor;
+    
+    border-top-style: valor;
+    border-right-style: valor;
+    border-bottom-style: valor;
+    border-left-style: valor;
+
+    border-top-color: valor;
+    border-right-color: valor;
+    border-bottom-color: valor;
+    border-left-color: valor;
+
+    Valores Estilo de borde:
+
+      - none
+      - hidden
+      - solid
+      - dotted
+      - dashed
+      - doble
+      - groove
+      - ridge
+      - inset
+      - ouset
+
+
+  4. Márgen (margin)
+
+  Permite tener espacio entre el borde de un elemento y otros elementos de la página. También es un "shorthand".
+
+    margin: top right bottom left;
+    margin: top right/left bottom;
+    margin: top/bottom right/left;
+    margin: t/r/b/l
+
+    margin-top: valor;
+    margin-right: valor;
+    margin-bottom: valor;
+    margin-left: valor;
+
+
+*/
+
+h2 {
+
+  margin: 8px 16px 24px 32px;
+
+  border: 5px solid wheat;
+
+  padding: 24px;
+
+  width: 200px;
+  height: 80px;
+
+  background-color: rgb(20, 20, 20);
+}
+
+img {
+
+  margin: 12px 24px 48px;
+
+  border-width: 10px;
+  border-style: inset;
+  border-color: rgb(150, 105, 255);
+
+  padding: 24px 48px;
+
+  width: 100px;
+  height: 80px;
+
+  background-color: darkmagenta;
+}
+
+ul {
+
+  margin: 48px 8px;
+
+  border-top-width: 20 px;
+  border-top-style: dashed;
+  border-top-color: rgb(62, 240, 145);
+
+  border-left-width: 16 px;
+  border-left-style: groove;
+  border-left-color: rgb(62, 83, 240);
+
+  padding: 24px 48px 64px;
+
+  height: 400px;
+  width: auto;
+
+  background-color: rgb(226, 43, 141);
+
+  list-style: none;
+}
+
+li {
+
+  margin: 24px;
+  
+  border-bottom-width: 20 px;
+  border-bottom-style: dashed;
+  border-bottom-color: rgb(240, 130, 62);
+
+  padding: 8px 16px 24px 32px;
+
+  height: 100px;
+  width: 300px;
+
+  background-color: darkcyan;
+}
