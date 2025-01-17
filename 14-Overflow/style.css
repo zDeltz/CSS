@@ -1,0 +1,53 @@
+/* 
+
+    Overflow (Desbordamiento)
+
+    Es la propiedad que controla el comportamiento  de un contenedor, cuando el contenido se desborda.
+
+        Desbordar -> Cuando 
+
+    Es una propiedad shorthandque engloba las propiedades overflow: x;  y  overflow: y;
+
+    Tiene 4 Posibles valores:
+
+        visible -> 
+
+*/
+
+
+html {
+    background-color: rosybrown;
+    color: lemonchiffon;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.box {
+    width: 30%;
+    height: 30%;
+    background-color:cornflowerblue;
+
+    overflow: visible;   /* Default */
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+
+}
+
+.text {
+    font-size: 22px;
+}
+
+.box-2 {
+    width: fit-content;     /* Ajustar al contenido */
+
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: darkslateblue;
+}
+
+img {
+    display: block;
+}
